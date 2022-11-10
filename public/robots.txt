@@ -1,0 +1,4 @@
+# Allows all bots, scraping and everything.
+
+User-agent: *
+Allow: /

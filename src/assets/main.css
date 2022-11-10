@@ -1,35 +1,268 @@
-@import './base.css';
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-
-  font-weight: normal;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: rgb(15, 15, 15);
+  font-display: swap;
 }
 
-a,
-.green {
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 0 30%;
+}
+
+.card {
+  margin: 2px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  background-color: rgb(20, 20, 20);
+  transition-duration: 0.15s;
   text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
+  cursor: pointer;
+  border-left-style: solid;
+  border-left-width: 0px;
+  border-radius: 10px;
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
+.card:hover {
+  background-color: rgb(40, 40, 40);
+  border-left-style: solid;
+  border-left-width: 10px;
+}
+
+.blue {
+  border-left-color: #3d57d9;
+}
+
+.orange {
+  border-left-color: rgb(255, 127, 0);
+}
+
+.brown {
+  border-left-color: rgb(150, 75, 0);
+}
+
+.green {
+  border-left-color: rgb(0, 255, 0);
+}
+
+.red {
+  border-left-color: rgb(255, 0, 0);
+}
+
+.rainbow {
+  animation: rainbow 2.5s linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rainbow {
+
+  100%,
+  0% {
+    border-left-color: rgb(255, 0, 0);
+  }
+
+  8% {
+    border-left-color: rgb(255, 127, 0);
+  }
+
+  16% {
+    border-left-color: rgb(255, 255, 0);
+  }
+
+  25% {
+    border-left-color: rgb(127, 255, 0);
+  }
+
+  33% {
+    border-left-color: rgb(0, 255, 0);
+  }
+
+  41% {
+    border-left-color: rgb(0, 255, 127);
+  }
+
+  50% {
+    border-left-color: rgb(0, 255, 255);
+  }
+
+  58% {
+    border-left-color: rgb(0, 127, 255);
+  }
+
+  66% {
+    border-left-color: rgb(0, 0, 255);
+  }
+
+  75% {
+    border-left-color: rgb(127, 0, 255);
+  }
+
+  83% {
+    border-left-color: rgb(255, 0, 255);
+  }
+
+  91% {
+    border-left-color: rgb(255, 0, 127);
   }
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
+.card:hover .title {
+  color: rgb(230, 230, 230);
+}
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
+.card:hover h2 {
+  color: black;
+}
+
+.about-section {
+  text-align: start;
+  background-color: rgb(15, 15, 15);
+  color: white;
+}
+
+.about-section img {
+  float: left;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after,
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Nunito', Verdana, Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  line-height: 15px;
+}
+
+h2 {
+  color: white;
+  font-family: 'Nunito', Verdana, Tahoma, sans-serif;
+  font-size: 20px;
+  transition-duration: 1000s;
+}
+
+h2 img {
+  float: left;
+  clear: left;
+  margin-bottom: 15px;
+  margin-right: 15px;
+  transition-duration: 0.15s;
+}
+
+.title {
+  color: rgb(166, 166, 166);
+  font-family: "Nunito";
+  font-weight: 800;
+  transition-duration: 0.15s;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: rgb(20, 20, 20);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #6383ff;
+}
+
+@media screen and (max-width: 1200px) {
+  .column {
+    width: 100%;
+    display: block;
+    padding: 0 10%;
   }
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(25, 25, 25);
+}
+
+li {
+  float: left;
+}
+
+li a {
+  font-family: "Nunito";
+  display: block;
+  color: white;
+  background-color: rgb(25, 25, 25);
+  text-align: center;
+  padding: 16.5px 21px;
+  text-decoration: none;
+  border-left-color: rgb(25, 25, 25);
+  transition-duration: 0.2s;
+  border-left-style: solid;
+  border-left-width: 0px;
+}
+
+li p {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+li a:hover {
+  background-color: #fff;
+  color: black;
+  font-weight: 800;
+  border-left-style: solid;
+  border-left-color: #3e4ab5;
+  border-left-width: 10px;
+  padding: 16.5px 30px;
+}
+
+div.card {
+  position: relative;
+}
+
+div.card a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-decoration: none;
+  /* No underlines on the link */
+  z-index: 10;
+  /* Places the link above everything else in the div */
+  background-color: #fff;
+  /* Fix to make div clickable in IE */
+  opacity: 0;
+  /* Fix to make div clickable in IE */
+  filter: alpha(opacity=1);
+  /* Fix to make div clickable in IE */
 }

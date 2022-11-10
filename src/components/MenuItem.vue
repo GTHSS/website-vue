@@ -16,6 +16,8 @@ if (!isValidColor)
     throw new Error("There is no color with such name.");
 
 const cssClasses = "card " + props.menuColor;
+const widthNormal = "30";
+const heightNormal = "30";
 </script>
 
 <template>
@@ -25,7 +27,7 @@ const cssClasses = "card " + props.menuColor;
                 <a :href="anchorLink"></a>
                 <div class="container">
                     <h2>
-                        <img :alt="imageAlternativeName" :src="imageLink" width="30px" height="30px" />
+                        <img :alt="imageAlternativeName" :src="imageLink" :width="widthNormal" :height="heightNormal" />
                     </h2>
                     <h2>{{ objectText }}</h2>
                     <p class="title">{{ objectSubText }}</p>

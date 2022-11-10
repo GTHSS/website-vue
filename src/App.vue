@@ -1,54 +1,37 @@
 <script setup lang="ts">
-import HelloWorld from "./components/HelloWorld.vue";
-import TheWelcome from "./components/TheWelcome.vue";
 import MenuItem from "./components/MenuItem.vue";
+import Background from "./components/BackgroundAnimation.vue";
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
+    <!--#region Available Sub-Websites-->
+    <main>
+        <MenuItem imageLink="./images/pterodactyl_logo.png" imageAlternativeName="pterodactyl_logo"
+            objectText="Pterodactyl Control Panel" objectSubText="Game servers done easy"
+            anchorLink="https://control.sussy.tech" menuColor="brown" />
 
-  <main>
-    <TheWelcome />
+        <MenuItem imageLink="./images/ubuntu_logo.webp" imageAlternativeName="ubuntu_logo"
+            objectText="Cockpit Management Panel" objectSubText="Just because it looks cool"
+            anchorLink="https://manage.sussy.tech" menuColor="orange" />
 
+        <MenuItem imageLink="./images/nextcloud_logo.webp" imageAlternativeName="nextcloud_logo"
+            objectText="NextCloud Storage" objectSubText="Dropbox but better" anchorLink="https://cloud.sussy.tech"
+            menuColor="blue" />
 
-  </main>
-  <MenuItem
-    imageLink="https://source.sussy.tech/sussy-incorporated/website/raw/branch/master/images/nextcloud_logo.webp"
-    imageAlternativeName="nextcloud_logo" objectText="NextCloud Storage" objectSubText="Dropbox but better"
-    anchorLink="https://cloud.sussy.tech" menuColor="blue" />
+        <MenuItem imageLink="https://source.sussy.tech/assets/img/logo.svg" imageAlternativeName="gitea_logo"
+            objectText="Gitea Source Control" objectSubText="GitHub but better" anchorLink="https://source.sussy.tech"
+            menuColor="green" />
+
+        <MenuItem imageLink="./images/virgin_logo.webp" imageAlternativeName="virgin_logo" objectText="Ivan's router"
+            objectSubText="Virgin Media Hub 3.0" anchorLink="https://router.sussy.tech" menuColor="red" />
+
+        <MenuItem imageLink="./images/blob_dance.gif" imageAlternativeName="emoji_cat_dance_gif"
+            objectText="Time to party" objectSubText="Wah? IDK either, just click it." anchorLink="./party.html"
+            menuColor="rainbow" />
+
+    </main>
+    <!--#endregion Available Sub-Websites-->
+
+    <Background />
 </template>
-
-<style scoped>
-header {
-  line-height: 1.5;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
-</style>
