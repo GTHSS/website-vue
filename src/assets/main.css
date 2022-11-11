@@ -72,51 +72,51 @@ html {
 
   100%,
   0% {
-    border-left-color: rgb(255, 0, 0);
+    color: rgb(255, 0, 0);
   }
 
   8% {
-    border-left-color: rgb(255, 127, 0);
+    color: rgb(255, 127, 0);
   }
 
   16% {
-    border-left-color: rgb(255, 255, 0);
+    color: rgb(255, 255, 0);
   }
 
   25% {
-    border-left-color: rgb(127, 255, 0);
+    color: rgb(127, 255, 0);
   }
 
   33% {
-    border-left-color: rgb(0, 255, 0);
+    color: rgb(0, 255, 0);
   }
 
   41% {
-    border-left-color: rgb(0, 255, 127);
+    color: rgb(0, 255, 127);
   }
 
   50% {
-    border-left-color: rgb(0, 255, 255);
+    color: rgb(0, 255, 255);
   }
 
   58% {
-    border-left-color: rgb(0, 127, 255);
+    color: rgb(0, 127, 255);
   }
 
   66% {
-    border-left-color: rgb(0, 0, 255);
+    color: rgb(0, 0, 255);
   }
 
   75% {
-    border-left-color: rgb(127, 0, 255);
+    color: rgb(127, 0, 255);
   }
 
   83% {
-    border-left-color: rgb(255, 0, 255);
+    color: rgb(255, 0, 255);
   }
 
   91% {
-    border-left-color: rgb(255, 0, 127);
+    color: rgb(255, 0, 127);
   }
 }
 
