@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const props = defineProps<{
     text: string,
-    overrideCss: string
+    overrideCss: string // Must be a True-False value.
 }>();
 let cssClass = "separator";
 let cssCustomized = "font-size: 15px";
@@ -26,6 +26,6 @@ function toBoolean(str: string): Boolean {
 
 <style scoped>
 .separator {
-    font-size: 15px,
+    font-size: 15px;
 }
 </style>
