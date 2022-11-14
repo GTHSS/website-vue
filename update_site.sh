@@ -1,3 +1,5 @@
+#!/bin/bash
+
 echo 'Getting inside dir.'
 
 cd /var/www/html
