@@ -19,10 +19,6 @@ import CenteredImage from "./components/CenteredImage.vue";
             objectText="not Ivan#4238" objectSubText="Dottik's GF"
             anchorLink="https://discord.com/users/843818345291972629" menuColor="blue" />
 
-        <PageAuthor imageLink="./images/airblow.webp" imageAlternativeName="TheAirBlows Profile Picture"
-            objectText="TheAirBlow#5375" objectSubText="Installed most of this crap"
-            anchorLink="https://discord.com/users/1011353533817290853" menuColor="blue" />
-
         <PageAuthor imageLink="./images/walter.jpg" imageAlternativeName="Masqrades Profile Picture"
             objectText="MasqradeOP⁴#6158" objectSubText="Typical Rust enjoyer; Rewrote this thing"
             anchorLink="https://discord.com/users/1010290469235871785" menuColor="blue" />
