@@ -1,7 +1,14 @@
 #!/bin/bash
 
+echo 'Getting to base dir.'
+cd /var/www/
+
+# Chown all files under html folder. Verbose and Recursively.
+echo 'chown to current user.'
+sudo chown $(whoami) html/ -v -R
+
 echo 'Getting inside dir.'
-cd /var/www/html
+cd html/
 
 echo 'Pulling code changes.'
 git pull
