@@ -1,7 +1,6 @@
 #!/bin/bash
 
 echo 'Getting inside dir.'
-
 cd /var/www/html
 
 echo 'Pulling code changes.'
