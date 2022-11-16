@@ -2,21 +2,44 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
+  <script src="./external/three.r134.min.js"></script>
+  <script src="./external/vanta.dots.min.js"></script>
+  <script defer>
+    function setBg() {
+      VANTA.DOTS({
+        el: "#background",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: window.innerHeight - 40,
+        minWidth: window.innerWidth - 100,
+        scale: 1.0,
+        scaleMobile: 1.0,
+        color: 0xffffff,
+        color2: 0xf2f2f2,
+        backgroundColor: 0x0,
+        spacing: 27.0,
+        showLines: false,
+      });
+    }
+  </script>
+  <meta charset="UTF-8" />
   <meta name="description" content="Sussy Technology&trade;" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <title>Sussy Technology&trade;</title>
 
-  <link rel="icon" href="./favicon.webp">
+  <link rel="icon" href="./favicon.webp" />
   <script defer async
     src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6547428867970188"
     crossorigin="anonymous"></script>
 </head>
 
-<body>
-  <div id="app"></div>
-  <script type="module" src="/src/main.ts"></script>
+<body onload="setBg()">
+  <div id="background">
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </div>
 </body>
 
 </html>

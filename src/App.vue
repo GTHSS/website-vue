@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import MenuItem from "./components/MenuItem.vue";
-import Background from "./components/BackgroundAnimation.vue";
 import MenuDivisor from "./components/MenuDivisor.vue";
 import PageAuthor from "./components/PageAuthor.vue";
 import CenteredImage from "./components/CenteredImage.vue";
@@ -60,5 +59,4 @@ import CenteredImage from "./components/CenteredImage.vue";
             anchorLink="javascript:alert('Not ready for public usage yet!')" menuColor="green" />
     </main>
 
-    <Background />
 </template>
