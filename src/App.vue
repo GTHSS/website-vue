@@ -16,7 +16,7 @@ import CenteredImage from "./components/CenteredImage.vue";
     <main>
         <MenuDivisor text="Our team" overrideCss="false" />
         <PageAuthor imageLink="./images/ivan.webp" imageAlternativeName="Ivans Profile Picture"
-            objectText="not Ivan#4238" objectSubText="Dottik's GF"
+            objectText="not Ivan#4238" objectSubText="I forgor"
             anchorLink="https://discord.com/users/843818345291972629" menuColor="blue" />
 
         <PageAuthor imageLink="./images/walter.jpg" imageAlternativeName="Masqrades Profile Picture"
