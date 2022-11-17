@@ -7,6 +7,7 @@
         crossorigin="anonymous"></script>
     <script src="./external/three.r134.min.js"></script>
     <script src="./external/vanta.dots.min.js"></script>
+    <script src="./js/audioPlayer.js"></script>
     <script defer>
         function setBg() {
             VANTA.DOTS({
@@ -25,6 +26,11 @@
                 showLines: false,
             });
         }
+
+        function startParty() {
+            playAudio('./audio/party.mp3')
+            console.log("Audio started.");
+        }
     </script>
     <title>Time to party bbg</title>
     <meta charset="UTF-8" />
@@ -40,10 +46,13 @@
 </head>
 
 <body onload="setBg()" style="background-color: #000000;">
-    <script type="module" src="/src/mainParty.ts"></script>
     <div id="background" style="z-index: -1;">
-    </div>
-    <div id="party">
+        <div style="flex: content;padding: 4vw;">
+            <h2>Don't let the party die!</h2>
+        </div>
+        <div style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);">
+            <img alt="party-emoji" src="/images/blob_dance.gif" width="200" height="200">
+        </div>
     </div>
 </body>
 
