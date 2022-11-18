@@ -1,41 +1,43 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <script defer async
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6547428867970188"
-        crossorigin="anonymous"></script>
+  <head>
+    <script
+      defer
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6547428867970188"
+      crossorigin="anonymous"
+    ></script>
     <script src="./external/three.r134.min.js"></script>
     <script src="./external/vanta.dots.min.js"></script>
     <script src="./js/audioPlayer.js"></script>
     <script defer>
-        function setBg() {
-            VANTA.DOTS({
-                el: "#background",
-                mouseControls: true,
-                touchControls: true,
-                gyroControls: false,
-                minHeight: window.innerHeight - 40,
-                minWidth: window.innerWidth - 100,
-                scale: 1.0,
-                scaleMobile: 1.0,
-                color: 0xffffff,
-                color2: 0xf2f2f2,
-                backgroundColor: 0x0,
-                spacing: 27.0,
-                showLines: false,
-            });
-        }
+      function setBg() {
+        VANTA.DOTS({
+          el: "#background",
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: window.innerHeight - 40,
+          minWidth: window.innerWidth - 100,
+          scale: 1.0,
+          scaleMobile: 1.0,
+          color: 0xffffff,
+          color2: 0xf2f2f2,
+          backgroundColor: 0x0,
+          spacing: 27.0,
+          showLines: false,
+        });
+      }
 
-        function startActivity() {
-            console.log("Starting Audio Playback...");
-            playAudio('./audio/party.mp3');
-            console.log("Audio Playback started.");
-            // ----
-            console.log("Starting Page Background...");
-            setBg();
-            console.log("Page Background started.");
-        }
+      function startActivity() {
+        console.log("Starting Audio Playback...");
+        playAudio("./audio/party.mp3");
+        console.log("Audio Playback started.");
+        // ----
+        console.log("Starting Page Background...");
+        setBg();
+        console.log("Page Background started.");
+      }
     </script>
     <title>Time to party bbg</title>
     <meta charset="UTF-8" />
@@ -43,32 +45,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="./images/blob_dance.gif" type="image/gif" />
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
 
-        h1 {
-            text-align: center;
-            padding-top: 25%;
-        }
+      h1 {
+        text-align: center;
+        padding-top: 25%;
+      }
 
-        h2 {
-            text-align: center;
-            text-rendering: optimizeLegibility;
-            color: white;
-            font-size: 6vw;
-            font-family: 'Source Sans Pro', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        }
+      h2 {
+        text-align: center;
+        text-rendering: optimizeLegibility;
+        color: white;
+        font-size: 6vw;
+        font-family: "Source Sans Pro", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
     </style>
-</head>
+  </head>
 
-<body onload="startActivity()" style="background-color: #000000;">
-    <div id="background" style="z-index: -1;">
+  <body onload="startActivity()" style="background-color: #000000">
+    <div id="background" style="z-index: -1"></div>
+    <div style="flex: content; padding: 4vw">
+      <h2>Don't let the party die!</h2>
     </div>
-    <div style="flex: content;padding: 4vw;">
-        <h2>Don't let the party die!</h2>
+    <div
+      style="
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      "
+    >
+      <img
+        alt="party-emoji"
+        src="/images/blob_dance.gif"
+        width="200"
+        height="200"
+      />
     </div>
-    <div style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);">
-        <img alt="party-emoji" src="/images/blob_dance.gif" width="200" height="200">
-    </div>
-</body>
-
+  </body>
 </html>
