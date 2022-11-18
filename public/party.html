@@ -27,9 +27,14 @@
             });
         }
 
-        function startParty() {
-            playAudio('./audio/party.mp3')
-            console.log("Audio started.");
+        function startActivity() {
+            console.log("Starting Audio Playback...");
+            playAudio('./audio/party.mp3');
+            console.log("Audio Playback started.");
+            // ----
+            console.log("Starting Page Background...");
+            setBg();
+            console.log("Page Background started.");
         }
     </script>
     <title>Time to party bbg</title>
@@ -55,7 +60,7 @@
     </style>
 </head>
 
-<body onload="setBg()" style="background-color: #000000;">
+<body onload="startActivity()" style="background-color: #000000;">
     <div id="background" style="z-index: -1;">
     </div>
     <div style="flex: content;padding: 4vw;">
