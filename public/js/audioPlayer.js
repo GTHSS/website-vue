@@ -1,4 +1,4 @@
-export function playAudio(src) {
+function playAudio(src) {
   try {
     const audioObject = new Audio(src);
     audioObject.loop = true;
