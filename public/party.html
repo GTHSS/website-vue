@@ -11,6 +11,15 @@
     <script src="./external/vanta.dots.min.js"></script>
     <script src="./js/audioPlayer.js"></script>
     <script defer>
+      function startActivity() {
+        console.log("Starting Audio Playback...");
+        playAudio("./audio/party.mp3");
+        console.log("Audio Playback started.");
+        // ----
+        console.log("Starting Page Background...");
+        setBg();
+        console.log("Page Background started.");
+      }
       function setBg() {
         VANTA.DOTS({
           el: "#background",
@@ -27,16 +36,6 @@
           spacing: 27.0,
           showLines: false,
         });
-      }
-
-      function startActivity() {
-        console.log("Starting Audio Playback...");
-        playAudio("./audio/party.mp3");
-        console.log("Audio Playback started.");
-        // ----
-        console.log("Starting Page Background...");
-        setBg();
-        console.log("Page Background started.");
       }
     </script>
     <title>Time to party bbg</title>
