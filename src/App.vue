@@ -36,6 +36,10 @@ import CenteredImage from "./components/CenteredImage.vue";
             objectText="NextCloud Storage" objectSubText="Dropbox but better" anchorLink="https://cloud.sussy.tech"
             menuColor="blue" />
 
+        <MenuItem imageLink="./images/overflow.webp" imageAlternativeName="overflow_logo"
+            objectText="Server Overflow" objectSubText="Search for servers" anchorLink="https://search.sussy.tech"
+            menuColor="blue" />
+
         <MenuItem imageLink="https://source.sussy.tech/assets/img/logo.svg" imageAlternativeName="gitea_logo"
             objectText="Gitea Source Control" objectSubText="GitHub but better" anchorLink="https://source.sussy.tech"
             menuColor="green" />
