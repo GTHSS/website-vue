@@ -7,7 +7,7 @@
     <script defer async src="./js/helpers.js"></script>
     <script defer>
       // Dynamically sets the old CSS background.
-      function setBg() {
+      function __setBg() {
         const htmlBody = document.getElementsByTagName("body")[0];
 
         console.log("Loading CSS...");
@@ -33,7 +33,7 @@
 
         console.log("Applying Background...");
         //console.log("Old Background Applied.");
-        setBg();
+        __setBg();
         /*
           VANTA.DOTS({
             el: "#background",
