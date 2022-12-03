@@ -16,10 +16,10 @@
     <script defer async src="./js/helpers.js"></script>
     <script defer>
       // Dynamically sets the old CSS background.
-      function setBgOld() {
+      function __setBg() {
         const htmlBody = document.getElementsByTagName("body")[0];
 
-        console.log("Loading old CSS...");
+        console.log("Loading CSS...");
         loadCssIntoDom("./css/oldBackground.css"); // from helpers.js
 
         for (let i = 1; i < 4; i++) {
@@ -36,33 +36,30 @@
         document.getElementById("background").id = ""; // remove old background stub id.
       }
       function setBg() {
-        injectMobilePredicate(); // from detectMobile.js
+        //injectMobilePredicate(); // from detectMobile.js
 
-        let isMobile = window.isMobile(); // Verify platform.
+        //let isMobile = window.isMobile(); // Verify platform.
 
-        if (isMobile) {
-          console.log(
-            "The device is a mobile device, therefore, we use the old animated CSS theme."
-          );
-          setBgOld();
-          console.log("Old Background Applied.");
-          return;
-        }
-        VANTA.DOTS({
-          el: "#background",
-          mouseControls: true,
-          touchControls: true,
-          gyroControls: false,
-          minHeight: window.innerHeight - 40,
-          minWidth: window.innerWidth - 100,
-          scale: 1.0,
-          scaleMobile: 1.0,
-          color: 0xffffff,
-          color2: 0xf2f2f2,
-          backgroundColor: 0x0,
-          spacing: 27.0,
-          showLines: false,
-        });
+        console.log("Applying Background...");
+        //console.log("Old Background Applied.");
+        __setBg();
+        /*
+          VANTA.DOTS({
+            el: "#background",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: window.innerHeight - 40,
+            minWidth: window.innerWidth - 100,
+            scale: 1.0,
+            scaleMobile: 1.0,
+            color: 0xffffff,
+            color2: 0xf2f2f2,
+            backgroundColor: 0x0,
+            spacing: 27.0,
+            showLines: false,
+          });
+        */
       }
       function startActivity() {
         console.log("Starting Audio Playback...");
