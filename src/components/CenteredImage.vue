@@ -2,6 +2,7 @@
 // Set some properties we will need later.
 const props = defineProps<{
   imageTitle: string;
+  imageSubTitle: string;
   imageAlt: string;
   imageSrc: string;
   sizeX: string;
@@ -19,9 +20,10 @@ const props = defineProps<{
         :height="sizeY"
       />
     </h1>
-    <div style="margin: 34px 0px 0px 5px">
+    
+    <div style="margin: 22px 0px 0px 10px">
       <h1>{{ imageTitle }}</h1>
-      <h2></h2>
+      <h2>{{ imageSubTitle }}</h2>
     </div>
   </div>
 </template>
