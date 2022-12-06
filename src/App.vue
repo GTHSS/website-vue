@@ -18,7 +18,7 @@ import CenteredImage from "./components/CenteredImage.vue";
             objectText="not Ivan#4238" objectSubText="He forgor everything"
             anchorLink="https://discord.com/users/843818345291972629" menuColor="blue" />
 
-        <PageAuthor imageLink="./images/airblow.png" imageAlternativeName="TheAirBlow PFP"
+        <PageAuthor imageLink="./images/airblow.webp" imageAlternativeName="TheAirBlow PFP"
             objectText="TheAirBlow#5375" objectSubText="Some random guy"
             anchorLink="https://discord.com/users/1011353533817290853" menuColor="blue" />
 
