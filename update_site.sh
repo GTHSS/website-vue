@@ -1,20 +1,16 @@
 #!/bin/bash
 
 echo 'Getting to base dir.'
-cd /var/www/
-
-# Chown all files under html folder. Verbose and Recursively.
-echo 'chown to current user.'
-sudo chown $(whoami) html/ -v -R
-
-echo 'Getting inside dir.'
-cd html/
+cd /var/www/html
 
 echo 'Pulling code changes.'
-git pull
+sudo git pull
 
 echo 'Installing Node Package Manager packages...'
-npm install
+sudo npm install
 
 echo 'Packing into new site.'
-npm run build
+sudo npm run build
+
+echo 'Fixing perms'
+sudo chown -R www-data /var/www/html
