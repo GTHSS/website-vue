@@ -14,3 +14,6 @@ sudo -u ivan npm install
 
 echo 'Packing into new site.'
 sudo -u ivan npm run build
+
+echo 'Own Back LOL'
+sudo chown -R www-data /var/www/html
