@@ -1,17 +1,16 @@
 #!/bin/bash
 
+echo 'Fixing perms'
+sudo chown -R ivan /var/www/html
+
 echo 'Getting to base dir.'
 cd /var/www/html
 
 echo 'Pulling code changes.'
-sudo git pull
+sudo -u ivan git pull
 
 echo 'Installing Node Package Manager packages...'
-sudo npm install
+sudo -u ivan npm install
 
 echo 'Packing into new site.'
-sudo rm -rf build/
-sudo npm run build
-
-echo 'Fixing perms'
-sudo chown -R www-data /var/www/html
+sudo -u ivan npm run build
