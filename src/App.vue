@@ -19,8 +19,8 @@ import CenteredImage from "./components/CenteredImage.vue";
             anchorLink="https://discord.com/users/843818345291972629" menuColor="blue" />
 
         <PageAuthor imageLink="./images/airblow.webp" imageAlternativeName="TheAirBlow PFP"
-            objectText="MasqradeOP⁴#6158" objectSubText="Some random guy"
-            anchorLink="https://discord.com/users/later" menuColor="blue" />
+            objectText="TheAirBlow#5375" objectSubText="Some random guy"
+            anchorLink="https://discord.com/users/1011353533817290853" menuColor="blue" />
 
         <PageAuthor imageLink="./images/walter.jpg" imageAlternativeName="Masqrades Profile Picture"
             objectText="MasqradeOP⁴#6158" objectSubText="Typical Rust enjoyer"
