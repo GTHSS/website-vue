@@ -10,6 +10,7 @@ echo 'Installing Node Package Manager packages...'
 sudo npm install
 
 echo 'Packing into new site.'
+sudo rm -rf build/
 sudo npm run build
 
 echo 'Fixing perms'
