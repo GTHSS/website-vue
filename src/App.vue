@@ -29,8 +29,8 @@ import CenteredImage from "./components/CenteredImage.vue";
         <MenuDivisor text="Our projects" overrideCss="true" />
 
         <MenuItem imageLink="./images/ball.png" imageAlternativeName="overflow_logo"
-            objectText="Server Overflow" objectSubText="Search for servers" anchorLink="https://search.sussy.tech"
-            menuColor="blue" />
+            objectText="Server Overflow" objectSubText="Spying on your MC server since 1998" 
+            anchorLink="https://search.sussy.tech" menuColor="brown" />
 
         <MenuDivisor text="Other stuff" overrideCss="true" />
 
