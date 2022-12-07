@@ -26,8 +26,14 @@ import CenteredImage from "./components/CenteredImage.vue";
             objectText="MasqradeOP⁴#6158" objectSubText="Typical Rust enjoyer"
             anchorLink="https://discord.com/users/1010290469235871785" menuColor="blue" />
 
+        <MenuDivisor text="Our projects" overrideCss="true" />
+
+        <MenuItem imageLink="./images/ball.png" imageAlternativeName="overflow_logo"
+            objectText="Server Overflow" objectSubText="Search for servers" anchorLink="https://search.sussy.tech"
+            menuColor="blue" />
+
         <MenuDivisor text="Other stuff" overrideCss="true" />
-        <!--#region Available Sub-Websites-->
+
         <MenuItem imageLink=" ./images/pterodactyl_logo.png" imageAlternativeName="pterodactyl_logo"
             objectText="Pterodactyl Control Panel" objectSubText="Game servers done easy"
             anchorLink="https://control.sussy.tech" menuColor="brown" />
@@ -50,13 +56,6 @@ import CenteredImage from "./components/CenteredImage.vue";
         <MenuItem imageLink="./images/blob_dance.gif" imageAlternativeName="emoji_cat_dance_gif"
             objectText="Time to party" objectSubText="Wah? IDK either, just click it." anchorLink="./party.html"
             menuColor="rainbow" />
-
-        <!--#endregion Available Sub-Websites-->
-        <MenuDivisor text="Our Current projects" overrideCss="true" />
-
-        <MenuItem imageLink="./images/notepad_logo.webp" imageAlternativeName="overflow_logo"
-            objectText="Server Overflow" objectSubText="Search for servers" anchorLink="https://search.sussy.tech"
-            menuColor="blue" />
     </main>
 
 </template>
