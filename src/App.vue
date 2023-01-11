@@ -63,7 +63,7 @@ import CenteredImage from "./components/CenteredImage.vue";
       imageAlternativeName="robux_logo"
       objectText="free robux"
       objectSubText="Grating free robuc"
-      anchorLink="./robux/index.html"
+      anchorLink="https://raytracing.tk"
       menuColor="green"
     />
 
