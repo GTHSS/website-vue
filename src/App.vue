@@ -63,7 +63,7 @@ import CenteredImage from "./components/CenteredImage.vue";
       imageAlternativeName="robux_logo"
       objectText="free robux"
       objectSubText="Grating free robuc"
-      anchorLink="https://sussy.tech/robux"
+      anchorLink="https://sussy.tech/robux/index.html"
       menuColor="green"
     />
 
