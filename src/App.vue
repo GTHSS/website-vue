@@ -68,7 +68,7 @@ import CenteredImage from "./components/CenteredImage.vue";
     />
 
     <MenuItem
-      imageLink="https://source.sussy.tech/assets/img/logo.svg"
+      imageLink="./images/google-logo.png"
       imageAlternativeName="Google logo"
       objectText="Pixelimages"
       objectSubText="Google pixel boot images"
