@@ -8,7 +8,7 @@ import CenteredImage from "./components/CenteredImage.vue";
 <template>
   <header>
     <CenteredImage
-      imageTitle="Sussy Technology&trade;"
+      imageTitle="Sussy Tech&trade;"
       imageAlt="Among Us Character Twerking"
       imageSrc="./images/amongus_buttdance.webp"
       imageSubTitle="Very suspicious indeed"
@@ -127,7 +127,7 @@ import CenteredImage from "./components/CenteredImage.vue";
       imageLink="./images/blob_dance.gif"
       imageAlternativeName="emoji_cat_dance_gif"
       objectText="Time to party"
-      objectSubText="Wah? IDK either, just click it."
+      objectSubText="Click click."
       anchorLink="./party.html"
       menuColor="rainbow"
     />
