@@ -22,8 +22,8 @@ import CenteredImage from "./components/CenteredImage.vue";
     <PageAuthor
       imageLink="./images/ivan.webp"
       imageAlternativeName="Ivans Profile Picture"
-      objectText="not Ivan#4238"
-      objectSubText="He forgor everything"
+      objectText="not Ivan#0001"
+      objectSubText="Gugugaga"
       anchorLink="https://discord.com/users/843818345291972629"
       menuColor="blue"
     />
@@ -41,7 +41,7 @@ import CenteredImage from "./components/CenteredImage.vue";
       imageLink="./images/walter.jpg"
       imageAlternativeName="Masqrades Profile Picture"
       objectText="MasqradeOP⁴#6158"
-      objectSubText="Typical Rust enjoyer"
+      objectSubText="Hes dottik"
       anchorLink="https://discord.com/users/1010290469235871785"
       menuColor="blue"
     />
@@ -62,8 +62,17 @@ import CenteredImage from "./components/CenteredImage.vue";
       imageLink="./images/robux.png"
       imageAlternativeName="robux_logo"
       objectText="free robux"
-      objectSubText="Grating free robuc"
+      objectSubText="I cba to fix fr"
       anchorLink="https://raytracing.tk"
+      menuColor="green"
+    />
+
+    <MenuItem
+      imageLink="https://source.sussy.tech/assets/img/logo.svg"
+      imageAlternativeName="Google logo"
+      objectText="Pixelimages"
+      objectSubText="Google pixel boot images"
+      anchorLink="https://cdn.sussy.tech/PixelImages/"
       menuColor="green"
     />
 
@@ -91,7 +100,7 @@ import CenteredImage from "./components/CenteredImage.vue";
       imageLink="./images/nextcloud_logo.webp"
       imageAlternativeName="nextcloud_logo"
       objectText="NextCloud Storage"
-      objectSubText="Dropbox but better"
+      objectSubText="Doesent even work"
       anchorLink="https://cloud.sussy.tech"
       menuColor="blue"
     />
